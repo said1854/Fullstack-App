@@ -3,9 +3,11 @@
     <div class="card-body">
         <ul class="list-group">
             <% if (typeof users != 'undefined') {%>
-            <% users.forEach(function(username){ %>
-            <li class="list-group-item"> <%= username %></li>
-            <% })} %>
+            <% users.forEach(function(user){ %>
+            <li class="list-group-item"> <%= user.username %></li>
+            <% })} else{ %>
+            <li class="list-group-item"> There is no registered user.</li>
+            <%}%>
         </ul>
     </div>
 </div>

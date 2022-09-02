@@ -25,17 +25,21 @@ db.once('open', () => {
 
 app.set('view engine', 'ejs');
 app.use(userRouter);
-app.get('/', (req, res) => {
-    User.find({}).then(users => {
-        res.render('pages/index'), {
-            users
-        }
-    }).catch(err => console.log(err));
-    res.render('pages/index.ejs')
+app.get('/', (_req, res) => {
+    User.find({})
+        .then(users => {
+            res.render('pages/index', {
+                users
+            });
+        })
+        .catch(err => console.log(err));
+    // res.render('pages/index.ejs')
 })
 
 app.use((req, res) => {
-    res.render('static/404');
+    res.render('static/404', {
+        message: "404 Not Found"
+    });
 })
 
 app.listen(port, () => {
