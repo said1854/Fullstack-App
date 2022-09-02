@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "Fullstack-App",
   "version": "1.0.0",
   "description": "express, passportjs, mongodb",
   "main": "app.js",
