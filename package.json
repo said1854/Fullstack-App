@@ -2,6 +2,10 @@
   "name": "project",
   "version": "1.0.0",
   "description": "express, passportjs, mongodb",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
