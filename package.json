@@ -2,9 +2,12 @@
   "name": "Fullstack-App",
   "version": "1.0.0",
   "description": "express, passportjs, mongodb",
+  "engines": {
+    "node": "16.x"
+  }
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "express",
