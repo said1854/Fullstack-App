@@ -1,7 +1,7 @@
 const app = require('express')();
 const mongoose = require('mongoose');
 require('dotenv').config();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 const userRouter = require('./routes/users');
 const User = require('./models/user');
@@ -42,6 +42,6 @@ app.use((req, res) => {
     });
 })
 
-app.listen(port || 3000, () => {
+app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 })
