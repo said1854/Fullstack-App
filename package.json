@@ -3,14 +3,9 @@
   "version": "1.0.0",
   "description": "express, passportjs, mongodb",
   "engines": {
-<<<<<<< HEAD
     "node": "16.x",
     "npm": "8.x"
   },
-=======
-    "node": "16.x"
-  }
->>>>>>> 7ed4742be830720f2ef4eda7ab24231fcb6063ab
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
