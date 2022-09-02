@@ -4,7 +4,7 @@
   "description": "express, passportjs, mongodb",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "express",
