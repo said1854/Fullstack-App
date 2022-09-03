@@ -7,7 +7,7 @@ const userRouter = require('./routes/users');
 const User = require('./models/user');
 
 // Mongodb connection
-mongoose.connect('mongodb://localhost/passportdb', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/passportdb', {
     useNewUrlParser: true
 });
 //bodyParser Middleware
@@ -41,6 +41,8 @@ app.use((req, res) => {
         message: "404 Not Found"
     });
 })
+
+if (process.env.NODE_ENV == "production");
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
