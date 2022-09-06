@@ -1,10 +1,9 @@
 <%- include('../layouts/header') -%>
 
-<% if (typeof message != 'undefined') { %>
+
 <div class="alert alert-danger">
-    <strong><%= message %></strong>
+    <strong><%= locals.message %></strong>
 </div>
-<% } %>
 
 
 <%- include('../layouts/footer') -%>
